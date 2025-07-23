@@ -70,6 +70,18 @@ Each tuple contains `(x, y, z, x * y * z)` for all combinations of:
 * `y` in `range(3)`
 * `z` in `range(4)`
 
+
+## Challenges
+
+### 6. Filter and Reformat Dictionary Pairs
+
+Given a list of `(key, value)` pairs, keep only those keys that start with `'x'` and reformat them into a dictionary with the key uppercased and the value squared.
+
+```python
+pairs = [('xray', 2), ('alpha', 3), ('xeno', 4), ('bravo', 5)]
+# Your goal: {'XRAY': 4, 'XENO': 16}
+```
+
 ---
 
 ## Hints
@@ -124,6 +136,21 @@ The loop nesting order in a comprehension mirrors the loop structure, like this:
 
 ---
 
+## 6: Filter and Reformat Dictionary Pairs
+
+You will need:
+
+- A for loop that unpacks each (k, v) in pairs
+- An if filter on whether k starts with 'x'
+- A key transformation using k.upper()
+- A value transformation using v ** 2
+
+```python
+result = {________: ________ for k, v in pairs if __________}
+```
+
+---
+
 ## Answers
 
 ### 1: Filter words that start with 'A'
@@ -162,4 +189,10 @@ result = ['even' if x % 2 == 0 else 'odd' for x in nums]
 
 ```python
 result = [(x, y, z, x * y * z) for x in range(2) for y in range(3) for z in range(4)]
+```
+
+### 6: Filter and Reformat Dictionary Pairs
+
+```python
+Paste answer here
 ```
