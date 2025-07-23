@@ -19,11 +19,11 @@
 
 ## ✅ Day 1: Comprehensions (List, Dict, Set)
 
-- [ ] Revisit list comprehensions  
-- [ ] Add filters (`if`) and transformations  
+- [X] Revisit list comprehensions  
+- [X] Add filters (`if`) and transformations  
 - [ ] Translate 3 nested `for` loops to comprehensions  
-- [ ] Try dict and set comprehensions  
-- [ ] Rewrite one function in your `bundle builder` using a comprehension
+- [X] Try dict and set comprehensions  
+- [X] Rewrite one function in your `bundle builder` using a comprehension
 
 ### Example
 
