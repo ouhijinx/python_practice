@@ -70,9 +70,6 @@ Each tuple contains `(x, y, z, x * y * z)` for all combinations of:
 * `y` in `range(3)`
 * `z` in `range(4)`
 
-
-## Challenges
-
 ### 6. Filter and Reformat Dictionary Pairs
 
 Given a list of `(key, value)` pairs, keep only those keys that start with `'x'` and reformat them into a dictionary with the key uppercased and the value squared.
