@@ -84,6 +84,21 @@ pairs = [('xray', 2), ('alpha', 3), ('xeno', 4), ('bravo', 5)]
 
 ---
 
+### 7. Conditional Dictionary Labeling
+
+Given a list of `(key, value)` pairs, build a dictionary where:
+- Keys that start with `'x'` are uppercased
+- Keys that start with `'y'` are lowercased
+- All other keys are skipped
+- Values should be replaced with `'even'` if the number is even, or `'odd'` if it's odd
+
+```python
+pairs = [('xray', 2), ('yeti', 3), ('alpha', 4), ('xeno', 5), ('yellow', 8)]
+# Your goal: {'XRAY': 'even', 'yeti': 'odd', 'XENO': 'odd', 'yellow': 'even'}
+```
+
+---
+
 ## Hints
 
 ### 1: Filter words that start with 'A'
@@ -151,6 +166,24 @@ result = {________: ________ for k, v in pairs if __________}
 
 ---
 
+## 7: Conditional Dictionary Labeling
+
+You'll need:
+
+- A filter for keys that start with 'x' or 'y'
+- A ternary expression for the key: use k.upper() or k.lower()
+- A ternary expression for the value: 'even' if v % 2 == 0, else 'odd'
+
+```python
+result = {
+    ___________: ___________
+    for k, v in pairs
+    if ____________
+}
+```
+
+---
+
 ## Answers
 
 ### 1: Filter words that start with 'A'
@@ -195,4 +228,10 @@ result = [(x, y, z, x * y * z) for x in range(2) for y in range(3) for z in rang
 
 ```python
 result = {k.upper(): v ** 2 for k, v in pairs if k.startswith('x')}
+```
+
+## 7: Conditional Dictionary Labeling
+
+```python
+# Paste answer here
 ```
