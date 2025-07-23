@@ -161,5 +161,5 @@ result = ['even' if x % 2 == 0 else 'odd' for x in nums]
 ### 5: Matrix Product Triples
 
 ```python
-# Paste your answer here
+result = [(x, y, z, x * y * z) for x in range(2) for y in range(3) for z in range(4)]
 ```
