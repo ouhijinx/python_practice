@@ -117,7 +117,9 @@ total = sum(args) + sum(v for k, v in kwargs.items() if k.startswith('val'))
 ### 1: Build an Argument Logger
 
 ```python
-# Paste your answer here
+def log_args(*args, **kwargs):
+    print(f'Positional: {args}')
+    print(f'Keyword: {kwargs}')
 ```
 
 ---
