@@ -127,7 +127,11 @@ def log_args(*args, **kwargs):
 ### 2: Forward Arguments to a Wrapped Function
 
 ```python
-# Paste your answer here
+def delegate(func):
+    def wrapper(*args, **kwargs):
+        print(f'Calling {func.__name__} with args={args}, kwargs={kwargs}')
+        return func(*args, **kwargs)
+    return wrapper
 ```
 
 ---
